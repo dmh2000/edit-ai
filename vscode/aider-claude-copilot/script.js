@@ -1,10 +1,11 @@
+import NTPClient from './node_modules/ntp-time/src/ntp-time.js';
+
 let currentTimezone = "America/Los_Angeles";
+const ntpClient = new NTPClient('pool.ntp.org', 123, { timeout: 5000 });
 
 function updateTime() {
-  fetch("https://us.pool.ntp.org/time.txt")
-    .then((response) => response.text())
-    .then((data) => {
-      const date = new Date(data);
+  ntpClient.getNetworkTime()
+    .then(date => {
       const options = {
         timeZone: currentTimezone,
         hour: "numeric",
@@ -18,17 +19,14 @@ function updateTime() {
     })
     .catch((error) => {
       console.error("Error fetching time:", error);
-      document.getElementById("current-time").textContent =
-        "Error fetching time";
+      document.getElementById("current-time").textContent = "Error fetching time";
     });
 }
 
-document
-  .getElementById("timezone-select")
-  .addEventListener("change", function () {
-    currentTimezone = this.value;
-    updateTime();
-  });
+document.getElementById("timezone-select").addEventListener("change", function () {
+  currentTimezone = this.value;
+  updateTime();
+});
 
 // Update time every second
 setInterval(updateTime, 1000);
