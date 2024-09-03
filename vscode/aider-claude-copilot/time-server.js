@@ -5,9 +5,9 @@ const ntpClient = require("ntp-time");
 
 const getTime = () => {
   const NTP = require("ntp-time").Client;
-  const client = new NTP("a.st1.ntp.br", 123, { timeout: 5000 })
+  const client = new NTP("pool.ntp.org", 123, { timeout: 5000 })
     .syncTime()
-    .then((time) => console.log(time)) // time is the whole NTP packet
+    .then((time) => null) // time is the whole NTP packet
     .catch(console.log);
 };
 
