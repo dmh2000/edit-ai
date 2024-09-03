@@ -1,5 +1,5 @@
 function updateTime() {
-  fetch("http://localhost:8001/time")
+  fetch("http://localhost:3000/time")
     .then((response) => response.json())
     .then((data) => {
       console.log(data);
