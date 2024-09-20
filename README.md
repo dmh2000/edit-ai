@@ -24,7 +24,7 @@ Here's my take:
     - using Anthropic with API Key
     - prepay for tokens. I like this because it isn't recurring.
 - Code Completion Models
-  - [Codestral](https://https://mistral.ai/news/codestral/)
+  - [Codestral](https://mistral.ai/news/codestral/)
     - free when run with Ollama
     - runs locally!
     - works with:
