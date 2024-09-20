@@ -1,0 +1,16 @@
+{
+    "models": [
+        {
+            "title": "Claude 3.5 Sonnet",
+            "provider": "anthropic",
+            "model": "claude-3-5-sonnet-20240620",
+            "apiKey": "API KEY"
+        }
+    ],
+    "tabAutocompleteModel": {
+        "title": "Codestral",
+        "provider": "mistral",
+        "model": "codestral-latest",
+        "apiKey": "API KEY"
+    }
+}
