@@ -23,12 +23,14 @@ Here's my take:
     - not free, but reasonably cheap
     - using Anthropic with API Key
     - prepay for tokens. I like this because it isn't recurring.
-- Code Completion Models
   - [Codestral](https://mistral.ai/news/codestral/)
-    - free when run with Ollama
-    - runs locally!
+    - free for experimentation on mistral.ai
+      - has a waitlist. sign up on
+    - free when run locally with Ollama
+      - ollama run codestral
     - works with:
       - VSCode
+- Code Completion Tools
   - [GitHub Copilot](https://github.com/features/copilot)
     - not free ($10/month for individual)
     - works with:
@@ -44,8 +46,11 @@ Here's my take:
       - Zed
     - free tier or paid
     - not tested in this article
+  - [Continue Dev](https://www.continue.dev/)
+    - works with:
+      - vscode extension
 
-While Claude-3.5-sonnet is what I use (it's ranked highly on most benchmarks), it's reasonbly easy to use OpenAI or Gemini with these tools for the main code generation. For code completion, its easiest to use GitHub Copilot (not free) or Codestral (free) running locally with Ollama.
+While Claude-3.5-sonnet is what I use (it's ranked highly on most benchmarks), it's reasonbly easy to use OpenAI or Gemini with these tools for the main code generation. For code completion, its easiest to use GitHub Copilot (not free) or Codestral (free) running locally or with Ollama.
 
 ## VSCode
 
