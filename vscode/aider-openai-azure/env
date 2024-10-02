@@ -1,0 +1,10 @@
+# aider --model gemini/gemini-1.5-pro-latest
+# gcloud auth application-default login
+# 
+# AIDER settings
+AIDER_CACHE_PROMPTS=true
+
+# AZURE OPENAI
+AZURE_API_KEY=
+AZURE_API_VERSION=
+AZURE_API_BASE=

@@ -1,0 +1,12 @@
+# ANTHROPIC Claude
+# ANTHROPIC_API_KEY=
+
+# CODESTRAL
+# if you have a mistral account, you can use their api endpoint for experimentation
+# remote endpoint for codestral : https://codestral.mistral.ai/v1/fim/completions
+# remote endpoint for chat
+MISTRAL_API_KEY=
+
+# AIDER settings
+AIDER_CACHE_PROMPTS=true
+

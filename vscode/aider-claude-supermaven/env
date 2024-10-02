@@ -1,0 +1,13 @@
+# ANTHROPIC Claude
+ANTHROPIC_API_KEY=
+ 
+
+# AIDER
+# aider (to use anthropic default)
+# 
+# AIDER settings
+AIDER_CACHE_PROMPTS=true
+
+# install supermaven in vscode
+# create account at https://supermaven.com/
+
