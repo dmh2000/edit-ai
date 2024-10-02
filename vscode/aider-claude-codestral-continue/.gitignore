@@ -1,2 +1,3 @@
 .continuerc.json
 node_modules
+.env
